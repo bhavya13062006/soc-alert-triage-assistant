@@ -1,0 +1,8 @@
+scikit-learn>=1.3
+rank_bm25>=0.2.2
+streamlit>=1.30
+pytest>=7.0
+# optional
+langgraph        # if missing, the pipeline runs as plain Python with the same nodes
+anthropic        # only for LLM-written summaries (set ANTHROPIC_API_KEY)
+# sentence-transformers   # optional: enables the embedding retriever (python evaluate.py --embeddings)
